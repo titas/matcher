@@ -3,7 +3,7 @@ source 'http://rubygems.org'
 gem 'rails', '~>3.0.3'
 gem 'sqlite3-ruby', :require => 'sqlite3'
 gem 'oauth'
-gem 'twitter'
+gem "twitter", :git => "git://git.assembla.com/twitter-gem.git", :tag => "v1.1.2", :require => nil
 
 group :test, :development do
   gem 'shoulda'

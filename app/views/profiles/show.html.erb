@@ -1,9 +1,9 @@
 <% if @profile.profile %>
-  <p>
+  <h1>
     <b><%= @profile.name %></b> your one-in-a-million is <b><%= @profile.profile.name %></b>
-  </p>
+  </h1>
 <% else %>
-  <p>
-    Sorry, <b><%= @profile.name %></b>. Be patient, love is coming and it bears the number <%= @profile.number %>
-  </p>
+  <h1>
+    Sorry, <b><%= @profile.name %></b>. Be patient, love is coming!
+  </h1>
 <% end %>

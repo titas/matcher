@@ -11,3 +11,11 @@
  *= require_self
  *= require_tree .
  */
+
+.center-align {
+  text-align: center;
+}
+
+.field {
+  color: #fff;
+}

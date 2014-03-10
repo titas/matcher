@@ -1,24 +1,9 @@
-<p id="notice"><%= notice %></p>
-
-<p>
-  <strong>Name:</strong>
-  <%= @profile.name %>
-</p>
-
-<p>
-  <strong>Number:</strong>
-  <%= @profile.number %>
-</p>
-
-<p>
-  <strong>Sex:</strong>
-  <%= @profile.sex %>
-</p>
-
-<p>
-  <strong>Profile:</strong>
-  <%= @profile.profile_id %>
-</p>
-
-<%= link_to 'Edit', edit_profile_path(@profile) %> |
-<%= link_to 'Back', profiles_path %>
+<% if @profile.profile %>
+  <p>
+    <b><%= @profile.name %></b> your one-in-a-million is <b><%= @profile.profile.name %></b>
+  </p>
+<% else %>
+  <p>
+    Sorry, <b><%= @profile.name %></b>. Be patient, love is coming and it bears the number <%= @profile.number %>
+  </p>
+<% end %>
